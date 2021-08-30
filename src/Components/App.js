@@ -19,13 +19,13 @@ const App = () => {
     const { name } = e.target;
     switch (name) {
       case 'good':
-        setGood((prev) => (prev += 1));
+        setGood((prev) => prev + 1);
         break;
       case 'neutral':
-        setNeutral((prev) => (prev += 1));
+        setNeutral((prev) => prev + 1);
         break;
       case 'negative':
-        setNegative((prev) => (prev += 1));
+        setNegative((prev) => prev + 1);
         break;
       default:
         return;

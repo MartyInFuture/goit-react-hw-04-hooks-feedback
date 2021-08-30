@@ -5,7 +5,7 @@ const Statistics = ({ good, neutral, negative, rate, total }) => {
   return (
     <div className="statistics">
       <h2>Statistics</h2>
-      {rate === 0 ? (
+      {total === 0 ? (
         <Notification message="No feedback given" />
       ) : (
         <div className="grades">
